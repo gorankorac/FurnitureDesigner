@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="sr-Latn" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORMA — Nameštaj sa karakterom</title>
+  <meta name="description" content="FORMA je studio za dizajn nameštaja Mladena Miloševića — predmeti oblikovani oko materijala, funkcije i bezvremenske forme.">
+  <meta name="theme-color" content="#f5f2ed">
+  <!-- Stop browsers (Chrome/Edge) from auto-translating the Serbian text -->
+  <meta name="google" content="notranslate">
+
+  <!-- Marks the document as JS-enabled before first paint, so reveal states never flash -->
+  <script>
+    document.documentElement.classList.add("js");
+    // Safety net: if main.js fails to run, show all content after 4s
+    window.__formaFallback = setTimeout(function () {
+      document.documentElement.classList.remove("js");
+    }, 4000);
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231e1d1b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23f5f2ed'%3EF%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Inter:wght@300;400;500&amp;display=swap">
+
+  <link rel="preload" as="image" href="assets/images/hero.jpg">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+  <!-- ===================================================== NAVIGATION -->
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Glavna navigacija">
+      <a class="nav__logo" href="#top" aria-label="Studio Mladen Milošević — nazad na vrh">
+        <span class="nav__logo-sub">Studio Mladen Milošević</span>
+        <span class="nav__logo-name">Dizajn nameštaja</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#projects">Projekti</a></li>
+        <li><a class="nav__link" href="#about">O nama</a></li>
+        <li><a class="nav__link" href="#contact">Kontakt</a></li>
+      </ul>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="visually-hidden" data-menu-label>Otvori meni</span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+    <ul class="mobile-menu__links">
+      <li><a class="mobile-menu__link" href="#projects"><span>01</span>Projekti</a></li>
+      <li><a class="mobile-menu__link" href="#about"><span>02</span>O nama</a></li>
+      <li><a class="mobile-menu__link" href="#contact"><span>03</span>Kontakt</a></li>
+    </ul>
+    <p class="mobile-menu__foot">Studio Mladen Milošević — dizajn nameštaja</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================================================== HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span data-load="2">Nameštaj</span></span>
+            <span class="line"><span data-load="3">sa <em>karakterom.</em></span></span>
+          </h1>
+
+          <p class="hero__lead" data-load="4">Predmeti oblikovani oko materijala, funkcije i bezvremenske&nbsp;forme.</p>
+
+          <div class="hero__actions" data-load="5">
+            <a class="btn btn--dark" href="#projects">
+              <span class="btn__label">Pogledaj projekte</span>
+              <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero__media" data-load="media">
+          <img src="assets/images/hero.jpg" alt="Stolica od oraha sa visokim lučnim naslonom pored okruglog stola od oraha, uz svetao zid" width="1800" height="2718" fetchpriority="high">
+          <figcaption class="hero__caption">
+            <span>Stolica Nord</span>
+            <span>Masivni orah, 2025</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <a class="hero__scroll" href="#projects" data-load="6">
+        <span>Skroluj</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================================================== SELECTED PROJECTS -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>(01) Izabrani radovi</p>
+          <h2 class="section-title" id="projects-title" data-reveal data-delay="1">Izabrani projekti</h2>
+          <p class="section-head__aside" data-reveal data-delay="2">Četiri komada iz studija — svaki nastajao polako, kroz skice, prototipove i mnogo vremena provedenog u radionici.</p>
+        </header>
+
+        <div class="projects__grid">
+          <article class="project project--1">
+            <div class="project__inner">
+              <div class="project__media" data-reveal="image">
+                <img src="assets/images/arco-chair.jpg" alt="Stolica Arco: zakrivljeni ram od savijenog hrasta sa mekim belim sedištem" width="1400" height="2100" loading="lazy" decoding="async">
+              </div>
+              <div class="project__meta" data-reveal>
+                <span class="project__index">01</span>
+                <div class="project__text">
+                  <h3 class="project__title">Stolica Arco</h3>
+                  <p class="project__desc">Jedan luk od lameliranog hrasta obuhvata telo. Dovoljno lagana da se podigne jednom rukom, dovoljno čvrsta za ceo život.</p>
+                </div>
+                <span class="project__tag">Hrast · 2025</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--2">
+            <div class="project__inner">
+              <div class="project__media" data-reveal="image">
+                <img src="assets/images/forma-table.jpg" alt="Sto Forma: dugačak trpezarijski sto od oraha sa stolicama u svetloj, otvorenoj prostoriji" width="1400" height="1867" loading="lazy" decoding="async">
+              </div>
+              <div class="project__meta" data-reveal>
+                <span class="project__index">02</span>
+                <div class="project__text">
+                  <h3 class="project__title">Sto Forma</h3>
+                  <p class="project__desc">Trpezarijski sto od oraha, napravljen za duge večeri. Raširene noge i omekšana ivica pozivaju ljude da sednu bliže.</p>
+                </div>
+                <span class="project__tag">Orah · 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--3">
+            <div class="project__inner">
+              <div class="project__media" data-reveal="image">
+                <img src="assets/images/mono-cabinet.jpg" alt="Komoda Mono: kompaktan pomoćni element od hrasta na suženim nogama, sa knjigama" width="1600" height="1067" loading="lazy" decoding="async">
+              </div>
+              <div class="project__meta" data-reveal>
+                <span class="project__index">03</span>
+                <div class="project__text">
+                  <h3 class="project__title">Komoda Mono</h3>
+                  <p class="project__desc">Jedan neprekinut pregib masivnog hrasta — površina gore, polica dole i ništa suvišno između.</p>
+                </div>
+                <span class="project__tag">Hrast · 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--4">
+            <div class="project__inner">
+              <div class="project__media" data-reveal="image">
+                <img src="assets/images/line-lounge.jpg" alt="Sofa Line: niska, duboka sofa sa toplo sivom presvlakom u prigušenom betonskom enterijeru" width="1400" height="2100" loading="lazy" decoding="async">
+              </div>
+              <div class="project__meta" data-reveal>
+                <span class="project__index">04</span>
+                <div class="project__text">
+                  <h3 class="project__title">Sofa Line</h3>
+                  <p class="project__desc">Niska, prostrana sofa nacrtana kao jedna horizontalna linija. Duboko sedište, miran profil, stvorena za spora popodneva.</p>
+                </div>
+                <span class="project__tag">Vuna i čelik · 2023</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== PHILOSOPHY -->
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="container philosophy__inner">
+        <p class="eyebrow" data-reveal>(02) Filozofija</p>
+
+        <h2 class="philosophy__title" id="philosophy-title">
+          <span class="line" data-reveal="line"><span>Manje,</span></span>
+          <span class="line" data-reveal="line" data-delay="1"><span><em>ali bolje.</em></span></span>
+        </h2>
+
+        <div class="philosophy__body">
+          <div class="philosophy__text">
+            <p class="philosophy__lead" data-reveal>Počinjemo od materijala i slušamo šta želi da postane.</p>
+            <p data-reveal data-delay="1">Svaki komad počinje pitanjem upotrebe — kako se drži, kako se na njemu sedi, kako se otvara, kako se sa njim živi. Zatim uklanjamo sve što toj svrsi ne služi, a ono što ostane dorađujemo dok proporcije ne postanu same po sebi razumljive.</p>
+            <p data-reveal data-delay="2">Rezultat je nameštaj koji ne traži mnogo pažnje, a ipak je nagrađuje. Iskreni spojevi, prirodne završne obrade koje lepo stare i forme dovoljno smirene da nadžive trendove — napravljene da se popravljaju, nasleđuju i koriste generacijama.</p>
+          </div>
+
+          <ol class="principles">
+            <li class="principle" data-reveal>
+              <span class="principle__num">01</span>
+              <h3 class="principle__title">Materijal</h3>
+              <p class="principle__text">Masivan, prirodan, iskreno obrađen.</p>
+            </li>
+            <li class="principle" data-reveal data-delay="1">
+              <span class="principle__num">02</span>
+              <h3 class="principle__title">Funkcija</h3>
+              <p class="principle__text">Upotreba određuje formu, nikada obrnuto.</p>
+            </li>
+            <li class="principle" data-reveal data-delay="2">
+              <span class="principle__num">03</span>
+              <h3 class="principle__title">Proporcija</h3>
+              <p class="principle__text">Ravnoteža pronađena rukom, u prirodnoj veličini.</p>
+            </li>
+            <li class="principle" data-reveal data-delay="3">
+              <span class="principle__num">04</span>
+              <h3 class="principle__title">Jednostavnost</h3>
+              <p class="principle__text">Samo ono što je potrebno — ništa više.</p>
+            </li>
+            <li class="principle" data-reveal data-delay="4">
+              <span class="principle__num">05</span>
+              <h3 class="principle__title">Dugotrajnost</h3>
+              <p class="principle__text">Napravljeno da se popravlja i nasleđuje.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== MATERIALS -->
+    <section class="section materials" id="materials" aria-labelledby="materials-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>(03) Materijali</p>
+          <h2 class="section-title" id="materials-title" data-reveal data-delay="1">Kratka lista iskrenih materijala</h2>
+          <p class="section-head__aside" data-reveal data-delay="2">Namerno radimo sa malom paletom, birajući materijale po čvrstoći, teksturi i načinu na koji stare.</p>
+        </header>
+
+        <ul class="materials__grid">
+          <li class="material" data-reveal>
+            <div class="material__swatch">
+              <img src="assets/images/oak.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+            </div>
+            <div class="material__info">
+              <h3 class="material__name">Hrast</h3>
+              <p class="material__text">Svetao, otvorenih pora i otporan. Vremenom poprima boju meda.</p>
+            </div>
+          </li>
+          <li class="material" data-reveal data-delay="1">
+            <div class="material__swatch">
+              <img src="assets/images/walnut.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+            </div>
+            <div class="material__info">
+              <h3 class="material__name">Orah</h3>
+              <p class="material__text">Duboki čokoladni tonovi i gusta šara koja se oseća pod prstima.</p>
+            </div>
+          </li>
+          <li class="material" data-reveal data-delay="2">
+            <div class="material__swatch">
+              <img src="assets/images/stone.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+            </div>
+            <div class="material__info">
+              <h3 class="material__name">Kamen</h3>
+              <p class="material__text">Brušeni krečnjak i travertin — hladni, tihi, sa prirodnim varijacijama.</p>
+            </div>
+          </li>
+          <li class="material" data-reveal data-delay="3">
+            <div class="material__swatch material__swatch--steel" aria-hidden="true"></div>
+            <div class="material__info">
+              <h3 class="material__name">Čelik</h3>
+              <p class="material__text">Brušen i patiniran, korišćen štedljivo — za čvrstinu i precizne linije.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================================================== ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <figure class="about__media" data-reveal="image">
+          <img src="assets/images/about-workshop.jpg" alt="Dizajner oblikuje komad struganog drveta u radionici studija" width="1600" height="1067" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="about__content">
+          <p class="eyebrow" data-reveal>(04) O studiju</p>
+          <h2 class="section-title" id="about-title" data-reveal data-delay="1">Dizajnirano polako, napravljeno da traje.</h2>
+          <p class="about__lead" data-reveal data-delay="2">FORMA je mali, nezavisni studio u kome dizajn i izrada nastaju pod istim krovom.</p>
+          <p data-reveal data-delay="3">Studio je osnovao dizajner Mladen Milošević, školovan i za arhitekturu i za stolarski zanat. Rad se odvija između table za crtanje i radnog stola: svaki dizajn se testira kao prototip u prirodnoj veličini pre nego što bude predstavljen, a zatim ga u malim serijama izrađuju provereni lokalni majstori.</p>
+          <p data-reveal data-delay="4">Svake godine prihvatamo ograničen broj privatnih i poslovnih porudžbina — od jedne stolice do kompletnog opremanja doma.</p>
+
+          <dl class="stats">
+            <div class="stat" data-reveal>
+              <dt class="stat__label">Godina iskustva</dt>
+              <dd class="stat__value">12</dd>
+            </div>
+            <div class="stat" data-reveal data-delay="1">
+              <dt class="stat__label">Komada u kolekciji</dt>
+              <dd class="stat__value">40+</dd>
+            </div>
+            <div class="stat" data-reveal data-delay="2">
+              <dt class="stat__label">Osnovna materijala</dt>
+              <dd class="stat__value">4</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <p class="eyebrow eyebrow--light" data-reveal>(05) Kontakt</p>
+        <h2 class="contact__title" id="contact-title">
+          <span class="line" data-reveal="line"><span>Imate ideju</span></span>
+          <span class="line" data-reveal="line" data-delay="1"><span><em>za projekat?</em></span></span>
+        </h2>
+        <p class="contact__text" data-reveal data-delay="2">Porudžbine, saradnje ili samo pitanje o nekom komadu — rado ćemo vas čuti.</p>
+        <div data-reveal data-delay="3">
+          <a class="btn btn--light" href="mailto:hello@forma-studio.com">
+            <span class="btn__label">Javite se</span>
+            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================== FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="footer__logo" href="#top" aria-label="FORMA — nazad na vrh">FORMA</a>
+        <nav aria-label="Navigacija u podnožju">
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#projects">Projekti</a></li>
+            <li><a class="footer__link" href="#about">O nama</a></li>
+            <li><a class="footer__link" href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> FORMA Studio — Mladen Milošević. Sva prava zadržana.</p>
+        <a class="footer__top-link" href="#top">Nazad na vrh ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
