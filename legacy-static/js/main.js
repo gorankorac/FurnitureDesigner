@@ -1,13 +1,13 @@
 /* ==========================================================================
-   FORMA — main script
+   Studio Mladen Milošević — main script
    ========================================================================== */
 
 (function () {
   "use strict";
 
   // The inline fallback in <head> un-hides content if this script never runs.
-  if (window.__formaFallback) {
-    clearTimeout(window.__formaFallback);
+  if (window.__studioFallback) {
+    clearTimeout(window.__studioFallback);
   }
 
   var body = document.body;
@@ -116,8 +116,8 @@
       }
     });
 
-    // The overlay only exists below the tablet breakpoint.
-    window.matchMedia("(min-width: 768px)").addEventListener("change", function (mq) {
+    // The overlay only exists below the desktop breakpoint.
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", function (mq) {
       if (mq.matches) closeMenu(false);
     });
   }

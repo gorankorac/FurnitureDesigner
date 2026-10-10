@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FORMA — Nameštaj sa karakterom</title>
-  <meta name="description" content="FORMA je studio za dizajn nameštaja Mladena Miloševića — predmeti oblikovani oko materijala, funkcije i bezvremenske forme.">
+  <title>Studio Mladen Milošević — Nameštaj sa karakterom</title>
+  <meta name="description" content="Studio Mladen Milošević — dizajn nameštaja. Predmeti oblikovani oko materijala, funkcije i bezvremenske forme.">
   <meta name="theme-color" content="#f5f2ed">
   <!-- Stop browsers (Chrome/Edge) from auto-translating the Serbian text -->
   <meta name="google" content="notranslate">
@@ -13,12 +13,12 @@
   <script>
     document.documentElement.classList.add("js");
     // Safety net: if main.js fails to run, show all content after 4s
-    window.__formaFallback = setTimeout(function () {
+    window.__studioFallback = setTimeout(function () {
       document.documentElement.classList.remove("js");
     }, 4000);
   </script>
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231e1d1b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23f5f2ed'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231e1d1b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23f5f2ed'%3EM%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +47,8 @@
 
       <ul class="nav__links">
         <li><a class="nav__link" href="#projects">Projekti</a></li>
+        <li><a class="nav__link" href="#philosophy">Filozofija</a></li>
+        <li><a class="nav__link" href="#materials">Materijali</a></li>
         <li><a class="nav__link" href="#about">O nama</a></li>
         <li><a class="nav__link" href="#contact">Kontakt</a></li>
       </ul>
@@ -63,8 +65,10 @@
   <div class="mobile-menu" id="mobile-menu" data-menu hidden>
     <ul class="mobile-menu__links">
       <li><a class="mobile-menu__link" href="#projects"><span>01</span>Projekti</a></li>
-      <li><a class="mobile-menu__link" href="#about"><span>02</span>O nama</a></li>
-      <li><a class="mobile-menu__link" href="#contact"><span>03</span>Kontakt</a></li>
+      <li><a class="mobile-menu__link" href="#philosophy"><span>02</span>Filozofija</a></li>
+      <li><a class="mobile-menu__link" href="#materials"><span>03</span>Materijali</a></li>
+      <li><a class="mobile-menu__link" href="#about"><span>04</span>O nama</a></li>
+      <li><a class="mobile-menu__link" href="#contact"><span>05</span>Kontakt</a></li>
     </ul>
     <p class="mobile-menu__foot">Studio Mladen Milošević — dizajn nameštaja</p>
   </div>
@@ -242,7 +246,7 @@
         <ul class="materials__grid">
           <li class="material" data-reveal>
             <div class="material__swatch">
-              <img src="assets/images/oak.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/images/oak.jpg" alt="Svetla hrastova površina sa izraženom šarom otvorenih pora" width="900" height="1200" loading="lazy" decoding="async">
             </div>
             <div class="material__info">
               <h3 class="material__name">Hrast</h3>
@@ -251,7 +255,7 @@
           </li>
           <li class="material" data-reveal data-delay="1">
             <div class="material__swatch">
-              <img src="assets/images/walnut.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/images/walnut.jpg" alt="Tamna orahova površina sa gustom, talasastom šarom" width="900" height="1200" loading="lazy" decoding="async">
             </div>
             <div class="material__info">
               <h3 class="material__name">Orah</h3>
@@ -260,7 +264,7 @@
           </li>
           <li class="material" data-reveal data-delay="2">
             <div class="material__swatch">
-              <img src="assets/images/stone.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async">
+              <img src="assets/images/stone.jpg" alt="Brušena kamena površina u toplim, prirodnim tonovima" width="900" height="1200" loading="lazy" decoding="async">
             </div>
             <div class="material__info">
               <h3 class="material__name">Kamen</h3>
@@ -288,7 +292,7 @@
         <div class="about__content">
           <p class="eyebrow" data-reveal>(04) O studiju</p>
           <h2 class="section-title" id="about-title" data-reveal data-delay="1">Dizajnirano polako, napravljeno da traje.</h2>
-          <p class="about__lead" data-reveal data-delay="2">FORMA je mali, nezavisni studio u kome dizajn i izrada nastaju pod istim krovom.</p>
+          <p class="about__lead" data-reveal data-delay="2">Mali, nezavisni studio u kome dizajn i izrada nastaju pod istim krovom.</p>
           <p data-reveal data-delay="3">Studio je osnovao dizajner Mladen Milošević, školovan i za arhitekturu i za stolarski zanat. Rad se odvija između table za crtanje i radnog stola: svaki dizajn se testira kao prototip u prirodnoj veličini pre nego što bude predstavljen, a zatim ga u malim serijama izrađuju provereni lokalni majstori.</p>
           <p data-reveal data-delay="4">Svake godine prihvatamo ograničen broj privatnih i poslovnih porudžbina — od jedne stolice do kompletnog opremanja doma.</p>
 
@@ -333,17 +337,22 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <a class="footer__logo" href="#top" aria-label="FORMA — nazad na vrh">FORMA</a>
+        <a class="footer__logo" href="#top" aria-label="Studio Mladen Milošević — nazad na vrh">
+          <span class="footer__logo-sub">Studio</span>
+          <span class="footer__logo-name">Mladen Milošević</span>
+        </a>
         <nav aria-label="Navigacija u podnožju">
           <ul class="footer__links">
             <li><a class="footer__link" href="#projects">Projekti</a></li>
+            <li><a class="footer__link" href="#philosophy">Filozofija</a></li>
+            <li><a class="footer__link" href="#materials">Materijali</a></li>
             <li><a class="footer__link" href="#about">O nama</a></li>
             <li><a class="footer__link" href="#contact">Kontakt</a></li>
           </ul>
         </nav>
       </div>
       <div class="footer__bottom">
-        <p>&copy; <span data-year>2026</span> FORMA Studio — Mladen Milošević. Sva prava zadržana.</p>
+        <p>&copy; <span data-year>2026</span> Studio Mladen Milošević. Sva prava zadržana.</p>
         <a class="footer__top-link" href="#top">Nazad na vrh ↑</a>
       </div>
     </div>

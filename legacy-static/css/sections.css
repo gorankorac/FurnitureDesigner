@@ -143,7 +143,7 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav__links {
     display: flex;
   }
@@ -162,7 +162,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: calc(var(--nav-h) + 3rem) var(--gutter) 2.5rem;
+  gap: 2.5rem;
+  padding: calc(var(--nav-h) + 2rem) var(--gutter) 2.5rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--c-bg);
   opacity: 0;
   visibility: hidden;
@@ -191,7 +194,7 @@
   padding-block: 0.6rem;
   border-bottom: 1px solid var(--c-line);
   font-family: var(--f-serif);
-  font-size: clamp(2.75rem, 10vw, 4rem);
+  font-size: clamp(2.25rem, 9vw, 3.75rem);
   font-weight: 300;
   line-height: 1.1;
   opacity: 0;
@@ -218,6 +221,8 @@
 .mobile-menu.is-open li:nth-child(1) .mobile-menu__link { transition-delay: 0.1s; }
 .mobile-menu.is-open li:nth-child(2) .mobile-menu__link { transition-delay: 0.18s; }
 .mobile-menu.is-open li:nth-child(3) .mobile-menu__link { transition-delay: 0.26s; }
+.mobile-menu.is-open li:nth-child(4) .mobile-menu__link { transition-delay: 0.34s; }
+.mobile-menu.is-open li:nth-child(5) .mobile-menu__link { transition-delay: 0.42s; }
 
 .mobile-menu__foot {
   font-size: var(--fs-xs);
@@ -226,7 +231,7 @@
   color: var(--c-muted);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .mobile-menu {
     display: none;
   }
@@ -865,12 +870,25 @@
 }
 
 .footer__logo {
-  font-family: var(--f-sans);
-  font-size: clamp(3rem, 1rem + 10vw, 9rem);
-  font-weight: 300;
-  line-height: 0.85;
-  letter-spacing: 0.12em;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   transition: color var(--dur-base) var(--ease-out);
+}
+
+.footer__logo-sub {
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--c-on-dark-muted);
+}
+
+.footer__logo-name {
+  font-family: var(--f-serif);
+  font-size: clamp(2.5rem, 1rem + 6vw, 6.5rem);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
 }
 
 .footer__logo:hover {
